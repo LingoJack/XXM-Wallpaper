@@ -1,0 +1,28 @@
+/*
+  所有页面公共的样式模块，在App.vue中引用
+  只需要在其他页面给需要添加样式的组件加上对应这里的类名即可使用
+*/
+view,siper,swiper-item{
+  box-sizing: border-box;
+}
+
+/*选择pageBackground类*/
+.pageBackground{
+  background:
+          /*设置从上到下的渐变 后面的是从该颜色占页面的多少*/
+          linear-gradient(to bottom,rgba(0,0,0,0),#ffffff 400rpx),
+          /*设置从左到右的渐变*/
+          linear-gradient(to right,#FFC7CE 20%,#C2F2D0);
+  min-height: 100vh;
+}
+
+/*定义loading的样式*/
+.loadingLayout{
+  padding: 30rpx 0;
+}
+
+.safe-area-inset-bottom{
+  //配置底部安全区域
+  height: env(safe-area-inset-bottom);
+}
+
